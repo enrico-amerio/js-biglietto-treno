@@ -4,12 +4,14 @@ console.log(distance, age);
 
 const priceKm = 0.21;
 const fullPrice = distance * priceKm;
+const discountYoung = 20;
+const discountSenior = 40;
 console.log(fullPrice);
 
 if(age < 18){
-  risultato = fullPrice - ((fullPrice * 20) / 100);
+  risultato = fullPrice - ((fullPrice * discountYoung) / 100);
 }else if(age >= 65){
-  risultato = fullPrice - ((fullPrice * 40) / 100);
+  risultato = fullPrice - ((fullPrice * discountSenior) / 100);
 }else{
   risultato = fullPrice;
 }
